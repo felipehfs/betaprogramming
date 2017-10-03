@@ -1,0 +1,67 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* sidebar */
+.sidebar {
+    width: 14%;
+    float: left;
+    text-align: center;
+    position: fixed;
+    background-color: cadetblue;
+    height: 100%;
+}
+.sidebar ul {
+    margin-top: 140px;
+    position: relative;
+}
+
+.sidebar--link {
+    line-height: 1.5em;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix::after, .clearfix:before{
+    display: table;
+    content: "";
+}
+
+.clearfix::after {
+    clear: both;
+}
+.sidebar--button {
+    z-index: 3;
+    position: fixed;
+    margin-left: 75px;
+}
+/* Postagens */
+.main {
+     margin-left: 10%;
+    width: 85%;
+}
+.main--post {
+    border-bottom: 1px dashed  #ccc;
+    padding: 14px 0;
+}
+.main--post p {
+    clear: both;
+    text-align: justify;
+    margin-top: 14px;
+    font-family: Helvetica;
+}
+.main--post h2{
+    font-family: Arial;
+}
+.main--post datetime {
+    background-color: burlywood;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
+    padding: 4px;
+    margin-bottom: 10px;
+    float: right;
+}

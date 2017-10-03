@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Beta Programming</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <nav class="sidebar clearfix">
+         
+        <ul>
+            <li><a class="sidebar--link" href="{% url 'index' %}">Home</a></li>
+            <li><a class="sidebar--link" href="#">Postagens</a></li>
+            <li><a class="sidebar--link" href="#">Sobre mim</a></li>
+        </ul>
+    </nav>
+     <div class="sidebar--button">MENU</div>
+     
+    <section class="main">
+            <article class="main--post">
+                <h2>{{ post.title }}</h2>
+                <datetime>Criado em: {{post.published_date }}</datetime>
+                <p>
+                    {{post.author}}
+                </p>
+                <p>
+                    {{ post.text }}
+                </p>
+            </article>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
